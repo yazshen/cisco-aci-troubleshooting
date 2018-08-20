@@ -5,3 +5,14 @@
 
 ### 2. 拓扑图
 ![L3out-TransitRoute](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/L3out-TransitRoute.png)
+
+### 3. 配置
+Transit Route类似传统网络里面的路由重分发，通过ACI Fabric，不同的L3out网络可以互相访问
+
+例如，OSPF网络192.168.1.1/32访问静态路由网络（一般为互联网区域）上8.8.8.8/32
+
+进入L3out-OSPF配置下的External EPG，然后把8.8.8.8/32加入subnet
+
+登录到OSPF路由器，检查路由表
+
+使用Ping测试
