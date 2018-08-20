@@ -18,10 +18,9 @@ Transit Route类似传统网络里面的路由重分发，通过ACI Fabric，不
 + 取消：External Subnets for the External EPG（因为我们配置的8.8.8.8/32并不是External EPG所属的路由)
 ![L3out-TransitRoute](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/L3out-01.png)
 
-
 登录到OSPF路由器，检查路由表
 ![L3out-TransitRoute](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/L3out-02.png)
 
 
-使用Ping测试
+使用Ping测试192.168.1.1访问8.8.8.8
 ![L3out-TransitRoute](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/L3out-03.png)
