@@ -1,5 +1,6 @@
 # cisco-aci-troubleshooting
-Cisco ACI 经验分享 (Robbie Shen)
+Cisco ACI 经验分享
+作者：Robbie Shen (yazshen@cisco.com)
 
 ## 正文
 ### 1. ACI运维三要素
@@ -15,5 +16,6 @@ Cisco ACI作为一个SDN产品，支持使用GUI, CLI, RESTFUL API来配置相�
 
 ### 2. 经验分享
 [L3out Transit Route](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/L3out-TransitRoute.md)
+
 [无法通过OOB用SSH访问Spine和Leaf](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/Mgmt-OOBSubnet.md)
 
