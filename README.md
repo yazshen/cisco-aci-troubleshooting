@@ -20,6 +20,8 @@ Cisco ACI作为一个SDN产品，支持使用GUI, CLI, RESTFUL API来配置相�
 
 [无法通过OOB用SSH访问Spine和Leaf](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/Mgmt-OOBSubnet.md)
 
+[EPG中组播配置：PIM ASM和SSM](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/Feature-PIM.md)
+
 
 ## License
 GNU General Public License v3.0
