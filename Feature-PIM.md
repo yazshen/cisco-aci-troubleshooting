@@ -75,5 +75,5 @@ Sender在交换机A，Receiver在交换机B
 + 192.168.102.2加入组播地址232.1.0.1并侦听ens160接口上source为192.168.102.1的数据包
 ![PIM SSM 场景一](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/Feature-PIM-12.png)
 
-+192.168.102.1发送数据到组播地址232.1.0.1
++ 192.168.102.1发送数据到组播地址232.1.0.1
 ![PIM SSM 场景一](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/Feature-PIM-13.png)
