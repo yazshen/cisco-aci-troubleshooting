@@ -55,9 +55,9 @@ Sender在交换机A，Receiver在交换机B
 
 
 ### 3. PIM SSM 场景一
-在EPG内，EP 192.168.102.1作为Sender，EP 192.168.102.1和192.168.102作为Receiver
+在EPG内，EP 192.168.102.1作为Sender，EP 192.168.102作为Receiver
 
-Sender在交换机A，Receiver在交换机A和B
+Sender在交换机A，Receiver在交换机B
 
 测试软件：iperf version 2.0.5 (08 Jul 2010) pthreads on CentOS 7
 
@@ -70,3 +70,10 @@ Sender在交换机A，Receiver在交换机A和B
 
 + 在Bridge Domain下关联新创建的IGMP策略
 ![PIM SSM 场景一](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/Feature-PIM-11.png)
+
+测试：
++ 192.168.102.2加入组播地址232.1.0.1并侦听ens160接口上source为192.168.102.1的数据包
+![PIM SSM 场景一](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/Feature-PIM-12.png)
+
++192.168.102.1发送数据到组播地址232.1.0.1
+![PIM SSM 场景一](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/Feature-PIM-13.png)
