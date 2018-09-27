@@ -22,6 +22,8 @@ Cisco ACI作为一个SDN产品，支持使用GUI, CLI, RESTFUL API来配置相�
 
 [EPG中组播配置：PIM ASM和SSM](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/Feature-PIM.md)
 
+[Bridge Domain的Static Route功能介绍](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/L3out-StaticRouteBD.md)
+
 
 ## License
 GNU General Public License v3.0
