@@ -24,6 +24,7 @@ Cisco ACI作为一个SDN产品，支持使用GUI, CLI, RESTFUL API来配置相�
 
 [Bridge Domain的Static Route功能介绍](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/L3out-StaticRouteBD.md)
 
+[避免使用VLAN Overlapping场景](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/VLAN-Overlapping.md)
 
 ## License
 GNU General Public License v3.0
