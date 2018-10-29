@@ -96,3 +96,15 @@ Sender在交换机B，Receiver在交换机A和B
 + 192.168.102.1发送数据到组播地址232.1.0.1
 ![PIM SSM 场景二](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/Feature-PIM-14.png)
 
+### 5. PIM SSM 场景三
+如果有VMware和ACI北向集成，需要配置"Allow Promiscuous"为"Accept"，SSM才能工作正常
+![PIM SSM 场景三](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/Feature-PIM-15.png)
+
+检查vSwitch配置
+![PIM SSM 场景三](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/Feature-PIM-16.png)
+
+测试
+![PIM SSM 场景三](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/Feature-PIM-17.png)
+
+已知问题
+iperf-ssm在vSwitch上有异常，接收端通过tcpdump可以看到multicast数据包，但是PIM-SSM软件本身没有显示收到。这应该是iperf-ssm自己的兼容性问题。
