@@ -149,6 +149,8 @@ SSH进入APIC CLI界面，运行如下命令检查ACI Fabric状态：
 "acidiag fnvread"
 ![Fabric Membership](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-14.png)
 
+"show version"
+![Fabric Membership](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-15.png)
 
 
 
