@@ -139,6 +139,17 @@ Commission成功后，我们可以看到交换机状态已经变成"Active"并�
 
 同时，我们也看到APIC发现了Spine交换机。按照以上步骤继续完成其他交换机注册。
 
+SSH进入APIC CLI界面，运行如下命令检查ACI Fabric状态：
+"show controller"
+![Fabric Membership](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-12.png)
+
+"show switch"
+![Fabric Membership](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-13.png)
+
+"acidiag fnvread"
+![Fabric Membership](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-14.png)
+
+
 
 
 
