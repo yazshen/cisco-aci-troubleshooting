@@ -102,3 +102,43 @@ CIMC引导中
 + Tenant Network也不能和Infra Pool重复
 + Infra Pool至少需要/23 Subnet
 + 建议Infra VLAN: 3967
+
+### 4. N9K交换机发现和注册
+#### 4.1 发现交换机
+登录APIC管理页面，选择"Fabric -> Inventory -> Fabric Membership"
+
+如果N9K交换机已经运行ACI Firmware并且没有其他ACI Fabric信息，那么我们可以先看到APIC服务器直连的Leaf交换机
+![Fabric Membership](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-07.png)
+
+如果N9K交换机还是NX-OS模式，需要先进行转换，参考文档如下：
+
+[NX-OS 6.x](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/6-x/upgrade/guide/b_Cisco_Nexus_9000_Series_NX-OS_Software_Upgrade_and_Downgrade_Guide_Release_6x/b_Cisco_Nexus_9000_Series_NX-OS_Software_Upgrade_and_Downgrade_Guide_Release_6x_chapter_010.html)
+
+[NX-OS 7.x](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/7-x/upgrade/guide/b_Cisco_Nexus_9000_Series_NX-OS_Software_Upgrade_and_Downgrade_Guide_Release_7x/Converting_from_Cisco_NX_OS_to_ACI_Boot_Mode.html)
+
+[NX-OS 9.x](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/9-x/upgrade/guide/b_Cisco_Nexus_9000_Series_NX-OS_Software_Upgrade_and_Downgrade_Guide_9x/b_Cisco_Nexus_9000_Series_NX-OS_Software_Upgrade_and_Downgrade_Guide_9x_chapter_0101.html)
+
+[Clean & Reload](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/1-x/troubleshooting/b_APIC_Troubleshooting/b_APIC_Troubleshooting_chapter_01001.html)
+
+[Leaf Hardware Recovery](https://www.cisco.com/c/en/us/support/docs/cloud-systems-management/application-policy-infrastructure-controller-apic/118865-prosbol-leaf-00.html)
+
++ 注意：转换到ACI模式后，记得再reload一次，确保交换机可以正常boot到ACI模式
+
+#### 4.2 注册交换机
+右键交换机，选择"Register"
+![Fabric Membership](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-08.png)
+
+输入Node ID和Node Name，然后点击"Update"
+![Fabric Membership](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-09.png)
+
+右键交换机，选择"Commission"
+![Fabric Membership](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-10.png)
+
+Commission成功后，我们可以看到交换机状态已经变成"Active"并且分配到Infra IP地址
+![Fabric Membership](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-11.png)
+
+同时，我们也看到APIC发现了Spine交换机。按照以上步骤继续完成其他交换机注册。
+
+
+
+
