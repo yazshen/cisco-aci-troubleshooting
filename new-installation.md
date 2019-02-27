@@ -55,4 +55,37 @@ This release supports the following firmware:
 + 不要选择已经标注为Deferred Release的版本
 
 
+### 2. 升级CIMC
+#### 2.1 查看UCS服务器型号和规格
+
+首选，登录CIMC管理界面，找到Server Summary -> Server Properties
+![UCS Type Model](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-01.png)
+
+从BIOS Version中我们可以知道这台APIC-SERVER-M1的型号为Cisco UCS C220M3
+
+从UCS产品页面下载CIMC安装介质：[UCS CIMC Download](https://software.cisco.com/download/home/283612685)
+
+选择"Unified Computing System (UCS) Server Firmware":
+![CIMC Firmware](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-02.png)
+
+#### 2.2 使用Virtual KVM更新CIMC
+我们可以使用Local KVM with DVD，Virtual KVM方式来重启服务器并用CIMC介质启动，升级CIMC相关固件时候，建议Update ALL
+
+输入默认密码：password
+
+![CIMC Firmware](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-03.png)
+
+选择Cisco vKVM-Mapped vDVD
+
+![CIMC Firmware](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-04.png)
+
+CIMC引导中
+
+![CIMC Firmware](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-05.png)
+
+选择Update All
+
+![CIMC Firmware](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-06.png)
+
+
 
