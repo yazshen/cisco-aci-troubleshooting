@@ -13,6 +13,8 @@ Cisco Nexus 9000 Series ACI Mode Switch Software Release 13.2(4e) (aci-n9000-dk9
 
 Cisco官方要求：整个ACI Fabric里面只能运行一个软件版本，也就是说APIC和N9K交换机上版本必须一致
 
+N9K交换机版本号会在ACI版本号前面多一个"1"，例如：13.2(4e)等于ACI 3.2(4e)
+
 #### 1.2 APIC CIMC版本
 APIC服务器是Cisco UCS C-Series产品定制，CIMC是UCS服务器上的带外管理系统。
 
@@ -50,8 +52,7 @@ This release supports the following firmware:
 
 选择好大版本之后，再选择最新的MR版本
 
-不要选择已经标注为Deferred Release的版本
-
++ 不要选择已经标注为Deferred Release的版本
 
 
 
