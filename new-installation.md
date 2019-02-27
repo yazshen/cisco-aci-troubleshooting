@@ -55,7 +55,7 @@ This release supports the following firmware:
 + 不要选择已经标注为Deferred Release的版本
 
 
-### 2. 升级CIMC
+### 2. CIMC升级
 #### 2.1 查看UCS服务器型号和规格
 
 首选，登录CIMC管理界面，找到Server Summary -> Server Properties
@@ -87,5 +87,18 @@ CIMC引导中
 
 ![CIMC Firmware](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-06.png)
 
+### 3. APIC安装
+参考官方文档：
 
+[APIC 2.x Guide](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/2-x/GSG/b_APIC_Getting_Started_Guide_Rel_2_x.html)
 
+[APIC 3.x Guide](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/3-x/getting_started/b_APIC_Getting_Started_Guide_Rel_3_x.html)
+
+[APIC 4.x Guide](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/4-x/getting-started/Cisco-APIC-Getting-Started-Guide-401.html)
+
+注意事项：
+
++ Infra Pool和Infra VLAN不要和现有网络冲突，尽可能选用未使用的资源来做Infra
++ Tenant Network也不能和Infra Pool重复
++ Infra Pool至少需要/23 Subnet
++ 建议Infra VLAN: 3967
