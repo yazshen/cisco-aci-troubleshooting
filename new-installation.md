@@ -48,6 +48,10 @@ This release supports the following firmware:
 
 [Recommended ACI Software Release](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/recommended-release/b_Recommended_Cisco_ACI_Releases.html)
 
-选择好大版本之后，然后选择最新的MR版本
+选择好大版本之后，再选择最新的MR版本
+
+不要选择已经标注为Deferred Release的版本
+
+
 
 
