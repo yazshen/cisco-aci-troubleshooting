@@ -28,6 +28,8 @@ Cisco ACI作为一个SDN产品，支持使用GUI, CLI, RESTFUL API来配置相�
 
 [L3out如何修改OSPF Type](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/L3out-OSPF-Type2.md)
 
+[Cisco ACI安装配置Guide](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/new-installation.md)
+
 ## License
 GNU General Public License v3.0
 (https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/LICENSE)
