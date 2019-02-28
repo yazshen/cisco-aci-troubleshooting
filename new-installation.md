@@ -190,4 +190,13 @@ SSH进入APIC CLI界面，运行如下命令检查ACI Fabric状态：
 
 ![Disable Remote EP Learning](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-24.png)
 
+#### 5.4 NTP配置
+参考官方配置文档：[NTP](https://www.cisco.com/c/en/us/support/docs/cloud-systems-management/application-policy-infrastructure-controller-apic/200128-Configuring-NTP-in-ACI-Fabric-Solution.html)
+
+![NTP](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-25.png)
+
+![NTP](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-26.png)
+
+![NTP](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-27.png)
+
 
