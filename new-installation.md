@@ -186,11 +186,16 @@ SSH进入APIC CLI界面，运行如下命令检查ACI Fabric状态：
 ![MP-BGP Route Reflector](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-23.png)
 
 #### 5.3 Disable Remote EP Learn (on border leaf)配置
-参考官方文档：[ACI Endpoint WhitePaper](https://www.cisco.com/c/en/us/solutions/collateral/data-center-virtualization/application-centric-infrastructure/white-paper-c11-739989.html)
+参考官方文档：[ACI Endpoint WhitePaper](https://www.cisco.com/c/en/us/solutions/collateral/data-center-virtualization/application-centric-infrastructure/white-paper-c11-739989.html#_Toc529820938)
 
 ![Disable Remote EP Learning](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-24.png)
 
-#### 5.4 NTP配置
+#### 5.4 IP Aging Policy配置
+参考官方文档：[IP Aging Policy](https://www.cisco.com/c/en/us/solutions/collateral/data-center-virtualization/application-centric-infrastructure/white-paper-c11-739989.html#_Toc529820940)
+
+![IP Aging Policy](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-28.png)
+
+#### 5.5 NTP配置
 参考官方配置文档：[NTP](https://www.cisco.com/c/en/us/support/docs/cloud-systems-management/application-policy-infrastructure-controller-apic/200128-Configuring-NTP-in-ACI-Fabric-Solution.html)
 
 ![NTP](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-25.png)
@@ -199,4 +204,9 @@ SSH进入APIC CLI界面，运行如下命令检查ACI Fabric状态：
 
 ![NTP](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-27.png)
 
+###6 检查System Fault信息
+
+完成Fabric配置后，我们再检查一下系统告警信息，如果没有意外信息，那就可以开始Tenant配置了。
+
+![System Faults](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-29.png)
 
