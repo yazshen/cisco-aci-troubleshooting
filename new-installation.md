@@ -204,7 +204,7 @@ SSH进入APIC CLI界面，运行如下命令检查ACI Fabric状态：
 
 ![NTP](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-27.png)
 
-###6 检查System Fault信息
+### 6. 检查System Fault信息
 
 完成Fabric配置后，我们再检查一下系统告警信息，如果没有意外信息，那就可以开始Tenant配置了。
 
