@@ -87,6 +87,17 @@ CIMC引导中
 
 ![CIMC Firmware](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-06.png)
 
+#### 2.3 检查TPM, LLDP状态
+在APIC安装之前，我们还要确认TPM LLDP状态：
+
+进入CIMC管理界面，选择"Server -> Inventory -> TPM"，确认状态为"Activated"
+
+![CIMC TPM](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-16.png)
+
+进入CIMC管理界面，选择"Server -> Inventory -> Cisco VIC Adapters"，确认LLDP状态为"Disabled"
+
+![CIMC TPM](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-17.png)
+
 ### 3. APIC安装
 参考官方文档：
 
