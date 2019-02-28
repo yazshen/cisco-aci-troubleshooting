@@ -164,6 +164,30 @@ SSH进入APIC CLI界面，运行如下命令检查ACI Fabric状态：
 "show version"
 ![Fabric Membership](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-15.png)
 
+### 5. Fabric Level配置
+在创建Tenant之前，我们还需要完成如下Fabric配置
+#### 5.1 OOB配置
+参考官方配置文档：[Inband and OOB Mgmt](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/kb/b_KB_Configuring_Static_Management_Access.html)
 
+![OOB Mgmt](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-18.png)
+
+![OOB Mgmt](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-19.png)
+
+![OOB Mgmt](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-20.png)
+
+
+#### 5.2 MP-BGP Route Reflector配置
+参考官方配置文档：[MP-BGP Route Reflector](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/2-x/L3_config/b_Cisco_APIC_Layer_3_Configuration_Guide/b_Cisco_APIC_Layer_3_Configuration_Guide_chapter_01001.html)
+
+![MP-BGP Route Reflector](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-21.png)
+
+![MP-BGP Route Reflector](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-22.png)
+
+![MP-BGP Route Reflector](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-23.png)
+
+#### 5.3 Disable Remote EP Learn (on border leaf)配置
+参考官方文档：[ACI Endpoint WhitePaper](https://www.cisco.com/c/en/us/solutions/collateral/data-center-virtualization/application-centric-infrastructure/white-paper-c11-739989.html)
+
+![Disable Remote EP Learning](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-24.png)
 
 
