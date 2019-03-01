@@ -1,4 +1,8 @@
 ## Cisco ACI安装和配置
++ 作者： Robbie Shen 
++ 联系： yazshen@cisco.com
++ 时间： 2019/03/01
+
 ### 1. 安装前准备工作
 #### 1.1 ACI软件版本
 ACI软件官方下载链接：[ACI Software Download](https://software.cisco.com/download/home/285968390/type)
@@ -50,7 +54,7 @@ This release supports the following firmware:
 
 [Recommended ACI Software Release](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/recommended-release/b_Recommended_Cisco_ACI_Releases.html)
 
-选择好大版本之后，再选择最新的MR版本
+选择好大版本之后，使用最新的MR版本
 
 + 不要选择已经标注为Deferred Release的版本
 
