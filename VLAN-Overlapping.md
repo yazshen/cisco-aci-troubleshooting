@@ -11,11 +11,11 @@ VLAN pools containing overlapping encap block definitions should not be associat
 
 ### 2. 配置案例
 
-![VLAN-Overlapping](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/VLAN-Overlapping-01.png)
+![VLAN-Overlapping](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/VLAN-Overlapping-01.png)
 
 ### 3. 测试命令
 
-![VLAN-Overlapping](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/VLAN-Overlapping-02.png)
+![VLAN-Overlapping](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/VLAN-Overlapping-02.png)
 
 ### 4. FD_VLAN
 FD_VLAN
