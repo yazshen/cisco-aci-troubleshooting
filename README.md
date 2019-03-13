@@ -16,22 +16,22 @@ Cisco ACI作为一个SDN产品，支持使用GUI, CLI, RESTFUL API来配置相�
 最后，我们到APIC或N9K的CLI界面，相关功能校验和确认配置是否生效。
 
 ### 2. 经验分享
-[Cisco ACI安装配置Guide](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/new-installation.md)
+[Cisco ACI安装配置Guide](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/new-installation.md)
 
-[L3out Transit Route](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/L3out-TransitRoute.md)
+[L3out Transit Route](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/L3out-TransitRoute.md)
 
-[无法通过OOB用SSH访问Spine和Leaf](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/Mgmt-OOBSubnet.md)
+[无法通过OOB用SSH访问Spine和Leaf](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/Mgmt-OOBSubnet.md)
 
-[EPG中组播配置：PIM ASM和SSM](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/Feature-PIM.md)
+[EPG中组播配置：PIM ASM和SSM](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/Feature-PIM.md)
 
-[Bridge Domain的Static Route功能介绍](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/L3out-StaticRouteBD.md)
+[Bridge Domain的Static Route功能介绍](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/L3out-StaticRouteBD.md)
 
-[避免使用VLAN Overlapping场景](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/VLAN-Overlapping.md)
+[避免使用VLAN Overlapping场景](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/VLAN-Overlapping.md)
 
-[L3out如何修改OSPF Type](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/L3out-OSPF-Type2.md)
+[L3out如何修改OSPF Type](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/L3out-OSPF-Type2.md)
 
 
 
 ## License
 GNU General Public License v3.0
-(https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/LICENSE)
+(https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/LICENSE)
