@@ -63,44 +63,44 @@ This release supports the following firmware:
 #### 2.1 查看UCS服务器型号和规格
 
 首选，登录CIMC管理界面，找到Server Summary -> Server Properties
-![UCS Type Model](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-01.png)
+![UCS Type Model](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-01.png)
 
 从BIOS Version中我们可以知道这台APIC-SERVER-M1的型号为Cisco UCS C220M3
 
 从UCS产品页面下载CIMC安装介质：[UCS CIMC Download](https://software.cisco.com/download/home/283612685)
 
 选择"Unified Computing System (UCS) Server Firmware":
-![CIMC Firmware](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-02.png)
+![CIMC Firmware](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-02.png)
 
 #### 2.2 使用Virtual KVM更新CIMC
 我们可以使用Local KVM with DVD，Virtual KVM方式来重启服务器并用CIMC介质启动，升级CIMC相关固件时候，建议Update ALL
 
 输入默认密码：password
 
-![CIMC Firmware](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-03.png)
+![CIMC Firmware](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-03.png)
 
 选择Cisco vKVM-Mapped vDVD
 
-![CIMC Firmware](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-04.png)
+![CIMC Firmware](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-04.png)
 
 CIMC引导中
 
-![CIMC Firmware](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-05.png)
+![CIMC Firmware](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-05.png)
 
 选择Update All
 
-![CIMC Firmware](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-06.png)
+![CIMC Firmware](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-06.png)
 
 #### 2.3 检查TPM, LLDP状态
 在APIC安装之前，我们还要确认TPM LLDP状态：
 
 进入CIMC管理界面，选择"Server -> Inventory -> TPM"，确认状态为"Activated"
 
-![CIMC TPM](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-16.png)
+![CIMC TPM](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-16.png)
 
 进入CIMC管理界面，选择"Server -> Inventory -> Cisco VIC Adapters"，确认LLDP状态为"Disabled"
 
-![CIMC TPM](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-17.png)
+![CIMC TPM](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-17.png)
 
 ### 3. APIC安装
 参考官方文档：
@@ -123,7 +123,7 @@ CIMC引导中
 登录APIC管理页面，选择"Fabric -> Inventory -> Fabric Membership"
 
 如果N9K交换机已经运行ACI Firmware并且没有其他ACI Fabric信息，那么我们可以先看到APIC服务器直连的Leaf交换机
-![Fabric Membership](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-07.png)
+![Fabric Membership](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-07.png)
 
 如果N9K交换机还是NX-OS模式，需要先进行转换，参考文档如下：
 
@@ -141,76 +141,76 @@ CIMC引导中
 
 #### 4.2 注册交换机
 右键交换机，选择"Register"
-![Fabric Membership](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-08.png)
+![Fabric Membership](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-08.png)
 
 输入Node ID和Node Name，然后点击"Update"
-![Fabric Membership](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-09.png)
+![Fabric Membership](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-09.png)
 
 右键交换机，选择"Commission"
-![Fabric Membership](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-10.png)
+![Fabric Membership](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-10.png)
 
 Commission成功后，我们可以看到交换机状态已经变成"Active"并且分配到Infra IP地址
-![Fabric Membership](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-11.png)
+![Fabric Membership](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-11.png)
 
 同时，我们也看到APIC发现了Spine交换机。按照以上步骤继续完成其他交换机注册。
 
 SSH进入APIC CLI界面，运行如下命令检查ACI Fabric状态：
 
 "show controller"
-![Fabric Membership](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-12.png)
+![Fabric Membership](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-12.png)
 
 "show switch"
-![Fabric Membership](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-13.png)
+![Fabric Membership](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-13.png)
 
 "acidiag fnvread"
-![Fabric Membership](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-14.png)
+![Fabric Membership](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-14.png)
 
 "show version"
-![Fabric Membership](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-15.png)
+![Fabric Membership](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-15.png)
 
 ### 5. Fabric Level配置
 在创建Tenant之前，我们还需要完成如下Fabric配置
 #### 5.1 OOB配置
 参考官方配置文档：[Inband and OOB Mgmt](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/kb/b_KB_Configuring_Static_Management_Access.html)
 
-![OOB Mgmt](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-18.png)
+![OOB Mgmt](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-18.png)
 
-![OOB Mgmt](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-19.png)
+![OOB Mgmt](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-19.png)
 
-![OOB Mgmt](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-20.png)
+![OOB Mgmt](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-20.png)
 
 
 #### 5.2 MP-BGP Route Reflector配置
 参考官方配置文档：[MP-BGP Route Reflector](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/2-x/L3_config/b_Cisco_APIC_Layer_3_Configuration_Guide/b_Cisco_APIC_Layer_3_Configuration_Guide_chapter_01001.html)
 
-![MP-BGP Route Reflector](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-21.png)
+![MP-BGP Route Reflector](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-21.png)
 
-![MP-BGP Route Reflector](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-22.png)
+![MP-BGP Route Reflector](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-22.png)
 
-![MP-BGP Route Reflector](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-23.png)
+![MP-BGP Route Reflector](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-23.png)
 
 #### 5.3 Disable Remote EP Learn (on border leaf)配置
 参考官方文档：[ACI Endpoint WhitePaper](https://www.cisco.com/c/en/us/solutions/collateral/data-center-virtualization/application-centric-infrastructure/white-paper-c11-739989.html#_Toc529820938)
 
-![Disable Remote EP Learning](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-24.png)
+![Disable Remote EP Learning](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-24.png)
 
 #### 5.4 IP Aging Policy配置
 参考官方文档：[IP Aging Policy](https://www.cisco.com/c/en/us/solutions/collateral/data-center-virtualization/application-centric-infrastructure/white-paper-c11-739989.html#_Toc529820940)
 
-![IP Aging Policy](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-28.png)
+![IP Aging Policy](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-28.png)
 
 #### 5.5 NTP配置
 参考官方配置文档：[NTP](https://www.cisco.com/c/en/us/support/docs/cloud-systems-management/application-policy-infrastructure-controller-apic/200128-Configuring-NTP-in-ACI-Fabric-Solution.html)
 
-![NTP](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-25.png)
+![NTP](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-25.png)
 
-![NTP](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-26.png)
+![NTP](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-26.png)
 
-![NTP](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-27.png)
+![NTP](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-27.png)
 
 ### 6. 检查System Fault信息
 
 完成Fabric配置后，我们再检查一下系统告警信息，如果没有意外信息，那就可以开始Tenant配置了。
 
-![System Faults](https://github.com/syz2000/cisco-aci-troubleshooting/blob/master/resource/new-installation-29.png)
+![System Faults](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-29.png)
 
