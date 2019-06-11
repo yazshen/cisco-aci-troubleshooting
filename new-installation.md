@@ -54,6 +54,8 @@ This release supports the following firmware:
 
 [Recommended ACI Software Release](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/recommended-release/b_Recommended_Cisco_ACI_Releases.html)
 
++ 如果你购买了APIC-SERVER-M3/APIC-SERVER-L3，那么只支持4.x版本
+
 选择好大版本之后，使用最新的MR版本
 
 + 不要选择已经标注为Deferred Release的版本
@@ -111,8 +113,11 @@ CIMC引导中
 
 [APIC 4.x Guide](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/4-x/getting-started/Cisco-APIC-Getting-Started-Guide-401.html)
 
+[APIC-SERVER-M3/L3 Installation Guide](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/server/M3-L3-server/APIC-M3-L3-Server.html)
+
 注意事项：
 
++ APIC-SERVER-M3/L3的VIC卡连接方式有特殊要求，请按照文档要求来连接Fabric Link到Leaf Switch
 + Infra Pool和Infra VLAN不要和现有网络冲突，尽可能选用未使用的资源来做Infra
 + Tenant Network也不能和Infra Pool重复
 + Infra Pool至少需要/23 Subnet
