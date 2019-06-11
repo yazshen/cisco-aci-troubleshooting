@@ -56,9 +56,7 @@ This release supports the following firmware:
 
 + 如果你购买了APIC-SERVER-M3/APIC-SERVER-L3，那么只支持4.x版本
 
-选择好大版本之后，使用最新的MR版本
-
-+ 不要选择已经标注为Deferred Release的版本
++ 选择好大版本之后，使用最新的MR版本，不要选择已经标注为Deferred Release的版本
 
 
 ### 2. CIMC升级
@@ -212,6 +210,23 @@ SSH进入APIC CLI界面，运行如下命令检查ACI Fabric状态：
 ![NTP](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-26.png)
 
 ![NTP](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-27.png)
+
+#### 5.6 Disable Remote EP Learing on Border Leaf
+参考官方配置文档：[Disable Remote EP Learning](https://www.cisco.com/c/en/us/solutions/collateral/data-center-virtualization/application-centric-infrastructure/white-paper-c11-739989.html#_Toc529820938)
+
+![Disable Remote EP Learning](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-30.png)
+
+#### 5.7 Enforce Subnet Check
+参考官方配置文档：[Enforce Subnet Check](https://www.cisco.com/c/en/us/solutions/collateral/data-center-virtualization/application-centric-infrastructure/white-paper-c11-739989.html#_Toc529820939)
+
+![Enforce Subnet Check](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-31.png)
+
+#### 5.8 Enforce Domain Validation
+（注意：一旦启用无法关闭）参考官方配置文档：[Enforce Domain Validation](https://www.cisco.com/c/en/us/solutions/collateral/data-center-virtualization/application-centric-infrastructure/white-paper-c11-737909.html#_Toc6452930)
+
+![Enforce Domain Validation](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-32.png)
+
+![Enforce Domain Validation](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/resource/new-installation-33.png)
 
 ### 6. 检查System Fault信息
 
