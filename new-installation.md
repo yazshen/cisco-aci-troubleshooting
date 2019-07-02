@@ -1,7 +1,7 @@
 ## Cisco ACI安装和配置
 + 作者： Robbie Shen 
 + 联系： yazshen@cisco.com
-+ 时间： 2019/03/01
++ 日期： 2019/03/01
 
 ### 1. 安装前准备工作
 #### 1.1 ACI软件版本
