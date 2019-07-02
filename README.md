@@ -16,7 +16,7 @@ Cisco ACI作为一个SDN产品，支持使用GUI, CLI, RESTFUL API来配置相�
 最后，我们到APIC或N9K的CLI界面，相关功能校验和确认配置是否生效。
 
 ### 2. 经验分享
-[Cisco ACI安装配置Guide](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/new-installation.md)
+[Cisco ACI安装配置示例](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/new-installation.md)
 
 [L3out Transit Route](https://github.com/yazshen/cisco-aci-troubleshooting/blob/master/L3out-TransitRoute.md)
 
